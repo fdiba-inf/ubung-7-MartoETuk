@@ -21,7 +21,7 @@ public class Triangle {
     public static void printLine(int start, int end) {
         // Implement method
         for (; start <= end; start++) {
-          System.out.print(start);
+          System.out.print(start + " ");
         }
         System.out.println("");
     }
