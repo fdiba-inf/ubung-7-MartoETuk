@@ -20,11 +20,19 @@ public class NumberCounter {
         int number = input.nextInt();
 
         int numberOccurrences = 0; // Call method
+
+        numberOccurrences = countNumberOccurrences(number, numbers);
         System.out.println("Number occurrences: " + numberOccurrences);
     }
 
     public static int countNumberOccurrences(int number, int[] numbers) {
         // Implement method
-        return 0;
+        int counter = 0;
+        for (int index = 0; index < numbers.length; index++) {
+          if (numbers[index] == number) {
+            counter++;
+          }
+        } 
+        return counter;
     }
 }
